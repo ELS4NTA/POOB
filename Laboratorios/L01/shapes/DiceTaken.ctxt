@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=DiceTaken
+comment0.text=\r\n\ DiceTaken\ es\ una\ aplicacion\ para\ jugar\ con\ shapes.\r\n\r\n\ @author\ Angie\ Mojica\ -\ Daniel\ Santanilla\r\n\ @version\ 0.0.1\r\n
+comment1.params=size
+comment1.target=DiceTaken(int)
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ DiceTaken\r\n
+comment2.params=
+comment2.target=void\ get()
+comment2.text=\r\n\ Obtiene\ el\ tablero\ de\ juego\r\n
+comment3.params=
+comment3.target=void\ delete()
+comment3.text=\r\n\ Borra\ el\ tablero\ de\ juego\r\n
+comment4.params=x\ y
+comment4.target=void\ lanzar(int,\ int)
+comment4.text=\r\n\ Lanzar\ un\ dado\ con\ posicion\ especifica\ \r\n
+comment5.params=x\ y
+comment5.target=void\ deslizar(int,\ int)
+comment5.text=\r\n\ Desliza\ un\ dado\ que\ pueda\ moverse\r\n\r\n\ @param\ \ x,y\ enteros\ y\ en\ el\ rango\ del\ tablero\ \r\n\ \r\n
+numComments=6
