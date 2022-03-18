@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Agent
+comment1.params=
+comment1.target=Agent()
+comment1.text=Create\ a\ new\ agent\r\n\ \r\n
+comment2.params=
+comment2.target=void\ turn()
+comment2.text=The\ agent\ turns\ one\ life\ span\ old\r\n\ \r\n
+comment3.params=
+comment3.target=int\ getAge()
+comment3.text=Returns\ the\ age\r\n\ \ \ \ @return\ \r\n
+comment4.params=
+comment4.target=boolean\ isAlive()
+comment4.text=Returns\ if\ alive\r\n\ \ \ \ @return\ true,\ if\ ALIVE;\ false,\ otherwise\r\n
+numComments=5
