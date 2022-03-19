@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Item
-comment0.text=No\ olviden\ adicionar\ la\ documentacion
+comment0.text=\r\n\ Representacion\ de\ un\ item\ para\ el\ automata\ celular\r\n
 comment1.params=
 comment1.target=void\ decide()
 comment2.params=

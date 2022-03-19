@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Agent
+comment0.text=\r\n\ Representacion\ de\ un\ agente\ que\ interactua\ en\ el\ automata.\r\n
 comment1.params=
 comment1.target=Agent()
 comment1.text=Create\ a\ new\ agent\r\n\ \r\n

@@ -1,7 +1,9 @@
 package domain;
 import java.awt.Color;
 
-/*No olviden adicionar la documentacion*/
+/**
+ * Representacion de un item para el automata celular
+ */
 public interface Item{
   int ROUND = 1;
   int SQUARE = 2;

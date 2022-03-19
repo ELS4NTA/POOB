@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Muro
+comment0.text=\r\n\ Es\ una\ representacion\ de\ un\ muro\ en\ el\ automata\ celular\r\n\ \r\n\ @author\ Angie\ Mojica\ -\ Daniel\ Santanilla\r\n\ @version\ 19-03-22\r\n
+comment1.params=ac\ row\ column
+comment1.target=Muro(CellularAutomata,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Muro\r\n\ @param\ ac\ Automata\ celular\ al\ que\ va\ a\ ser\ ingresado\r\n\ @param\ row\ Fila\ en\ el\ automata\ celular\ al\ que\ va\ a\ ser\ ingresado\r\n\ @param\ column\ Columna\ en\ el\ automata\ celular\ al\ que\ va\ a\ ser\ ingresado\r\n
+comment2.params=
+comment2.target=void\ decide()
+comment2.text=\r\n\ Decide\ la\ siguiente\ accion\ en\ el\ automata\r\n
+comment3.params=
+comment3.target=int\ shape()
+comment3.text=\r\n\ Forma\ que\ tomara\ el\ muro\ en\ el\ automata\r\n\ @return\ Entero\ con\ el\ identificador\ de\ la\ forma\r\n
+comment4.params=
+comment4.target=java.awt.Color\ getColor()
+comment4.text=\r\n\ Color\ que\ tiene\ el\ muro.\r\n\ @return\ Color\ del\ muro,\ este\ es\ verde.\r\n
+comment5.params=
+comment5.target=boolean\ isAlive()
+comment5.text=\r\n\ Indica\ si\ un\ muro\ esta\ vivo\ en\ el\ automata\r\n\ @return\ true\ siempre,\ dado\ que\ el\ muro\ siempre\ estar\u00E1\ vivo.\r\n
+numComments=6

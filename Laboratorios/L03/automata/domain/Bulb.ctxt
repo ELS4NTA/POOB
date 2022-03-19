@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Bulb
+comment0.text=\r\n\ Una\ bombillo\ {@link\ Agent}\r\n\ \r\n\ @author\ Angie\ Mojica\ -\ Daniel\ Santanilla\r\n\ @version\ 18-03-22\r\n
+comment1.params=ac\ row\ column
+comment1.target=Bulb(CellularAutomata,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Bulb\r\n
+comment2.params=
+comment2.target=void\ decide()
+comment2.text=Decide\ its\ next\ state\r\n
+comment3.params=
+comment3.target=void\ change()
+comment3.text=Change\ its\ actual\ state\r\n
+comment4.params=
+comment4.target=int\ shape()
+comment4.text=\r\n\ Forma\ que\ tomara\ el\ bombillo\ en\ el\ automata\r\n\ @return\ Entero\ con\ el\ identificador\ de\ la\ forma\r\n
+comment5.params=
+comment5.target=java.awt.Color\ getColor()
+comment5.text=Returns\ the\ color\r\n\ @return\ Color\r\n
+numComments=6

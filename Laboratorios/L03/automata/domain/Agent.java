@@ -1,12 +1,14 @@
 package domain;
-
 import java.awt.Color;
 
-
+/**
+ * Representacion de un agente que interactua en el automata.
+ */
 public abstract class Agent{
     
     public final static char UNKNOWN='u', ALIVE='a', DEAD='d';
     protected char state;
+    protected int shape;
     private int age;
 
     /**Create a new agent
