@@ -10,13 +10,13 @@ import java.awt.*;
 public class Triangle{
     
     public static int VERTICES=3;
-    
     private int height;
     private int width;
     private int xPosition;
     private int yPosition;
     private String color;
     private boolean isVisible;
+    private int angle;
 
     /**
      * Create a new triangle at default position with default color.
@@ -24,12 +24,24 @@ public class Triangle{
     public Triangle(){
         height = 20;
         width = 15;
-        xPosition = 12;
-        yPosition = 6;
+        xPosition = 30;
+        yPosition = 20;
         color = "green";
+        angle = 0;
         isVisible = false;
     }
-
+    
+    /**
+     * Actualiza el valor del angulo.
+     * @param newAngle Entero que representa el angulo en grados
+     * es recomendable usar numeros entre 0 y 360
+     */
+    public void setAngle(int newAngle){
+        erase();
+        this.angle = newAngle;
+        draw();
+    }
+    
     /**
      * Make this triangle visible. If it was already visible, do nothing.
      */
@@ -127,7 +139,6 @@ public class Triangle{
         } else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             yPosition += delta;
             draw();
@@ -162,9 +173,9 @@ public class Triangle{
     private void draw(){
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            int[] xpoints = { xPosition, xPosition + (width/2), xPosition - (width/2) };
-            int[] ypoints = { yPosition, yPosition + height, yPosition + height };
-            canvas.draw(this, color, new Polygon(xpoints, ypoints, 3));
+            int[] xpoints = { xPosition - height, xPosition - height,xPosition };
+            int[] ypoints = { yPosition - (width/2), yPosition + (width/2), yPosition };
+            canvas.draw(this, color, new Polygon(xpoints, ypoints, 3), angle,xPosition,yPosition);
             canvas.wait(10);
         }
     }

@@ -11,15 +11,12 @@ import java.awt.geom.*;
 public class Circle{
 
     public static final double PI=3.1416;
-    
     private double diameter;
     private double area;
     private int xPosition;
     private int yPosition;
     private String color;
     private boolean isVisible;
-    
-    
 
     public Circle(){
         diameter = 20;
@@ -29,8 +26,6 @@ public class Circle{
         color = "blue";
         isVisible = false;
     }
-
-
        
     public void makeVisible(){
         isVisible = true;
@@ -54,7 +49,7 @@ public class Circle{
             Canvas canvas = Canvas.getCanvas();
             canvas.draw(this, color, 
                 new Ellipse2D.Double(xPosition, yPosition, 
-                diameter, diameter));
+                diameter, diameter),0,xPosition,yPosition);
             canvas.wait(10);
         }
     }
@@ -120,14 +115,12 @@ public class Circle{
      */
     public void slowMoveHorizontal(int distance){
         int delta;
-
         if(distance < 0) {
             delta = -1;
             distance = -distance;
         } else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             xPosition += delta;
             draw();
@@ -147,7 +140,6 @@ public class Circle{
         }else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             yPosition += delta;
             draw();
@@ -197,7 +189,7 @@ public class Circle{
      */
     public void rainbow(){
         short cont = 0;
-        while (true) {
+        while (cont<600) {
             color = "red";
             draw();
             color = "yellow";

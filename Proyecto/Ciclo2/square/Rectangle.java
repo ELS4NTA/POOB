@@ -7,8 +7,6 @@ import java.awt.*;
  * @version 1.0  (15 July 2000)()
  */
 
-
- 
 public class Rectangle{
 
     public static int EDGES = 4;
@@ -19,6 +17,7 @@ public class Rectangle{
     private int yPosition;
     private String color;
     private boolean isVisible;
+    private int angle;
 
     /**
      * Create a new rectangle at default position with default color.
@@ -28,10 +27,10 @@ public class Rectangle{
         width = 40;
         xPosition = 0;
         yPosition = 0;
+        angle = 0;
         color = "white";
         isVisible = false;
     }
-    
 
     /**
      * Make this rectangle visible. If it was already visible, do nothing.
@@ -110,7 +109,6 @@ public class Rectangle{
         } else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             xPosition += delta;
             draw();
@@ -166,13 +164,12 @@ public class Rectangle{
     private void draw() {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            canvas.draw(this, color,
-                new java.awt.Rectangle(xPosition, yPosition, 
-                                       width, height));
+            canvas.draw(this, color,new java.awt.Rectangle(xPosition, yPosition, 
+                                       width, height),angle,xPosition,yPosition);
             canvas.wait(10);
         }
     }
-
+    
     /*
      * Erase the rectangle on screen.
      */

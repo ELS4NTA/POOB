@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Dome
+comment0.text=\r\n\ Un\ domo\ es\ un\ circulo\ que\ representa\ una\ cuplula\ del\ problema\ de\ la\ plaza\ para\ el\ MTB.\r\n\ \r\n\ @author\ Angie\ Mojica\ -\ Daniel\ Santanilla\r\n\ @version\ 0.0.2\r\n
+comment1.params=newColor\ xPos\ yPos\ identifier
+comment1.target=Dome(java.lang.String,\ int,\ int,\ int)
+comment1.text=\r\n\ Costructor\ del\ domo\ en\ una\ plaza.\r\n\ @param\ newColor\ Color\ del\ domo\ definido\ en\ la\ plaza.\r\n\ @param\ xPos\ Posicion\ en\ x\ definida\ en\ la\ plaza.\r\n\ @param\ yPos\ Posicion\ en\ y\ definida\ en\ la\ plaza.\r\n\ @param\ identifier\ Identificador\ definido\ por\ defecto\ en\ la\ plaza.\r\n
+comment2.params=
+comment2.target=int\ getIdentifier()
+comment2.text=\r\n\ Obtiene\ el\ identificador\ del\ domo\r\n\ @return\ Numero\ de\ identificacion\ del\ domo.\r\n
+comment3.params=
+comment3.target=int\ getPosx()
+comment3.text=\r\n\ Obtiene\ la\ posicion\ en\ x\ del\ domo.\r\n\ @return\ Numero\ de\ la\ posicion\ en\ x\ del\ domo.\r\n
+comment4.params=
+comment4.target=int\ getPosy()
+comment4.text=\r\n\ Obtiene\ la\ posicion\ en\ y\ del\ domo.\r\n\ @return\ Numero\ de\ la\ posicion\ en\ y\ del\ domo.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getColor()
+comment5.text=\r\n\ Obtiene\ el\ color\ del\ Domo\r\n\ @return\ Cadena\ con\ el\ color\ del\ Domo\r\n
+comment6.params=
+comment6.target=void\ makeVisible()
+comment6.text=\r\n\ Hace\ visible\ el\ domo\ en\ el\ canvas.\r\n
+comment7.params=
+comment7.target=void\ makeInvisible()
+comment7.text=\r\n\ Hace\ invisible\ el\ domo\ en\ el\ canvas.\r\n
+numComments=8
