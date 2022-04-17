@@ -1,9 +1,9 @@
 
 /**
- * Un turista es una abstaccion de una persona que llega a la plaza de la simulacion del MTB.
+ * Clase que representa un turista que llega a la plaza de la simulacion del MTB.
  * 
  * @author Angie Mojica - Daniel Santanilla 
- * @version 0.0.2
+ * @version 0.0.3
  */
 public class Tourist
 {
@@ -20,7 +20,7 @@ public class Tourist
      * @param newColor Color del turista definido en la plaza.
      * @param xPos Posicion x del turista definida en la plaza.
      * @param yPos Posicion y del turista definida en la plaza.
-     * @param angle Angulo de vision del turista en sentido horario (pov) definida en la plaza.
+     * @param angle Angulo de vision del turista en sentido antihorario definida en la plaza.
      */
     public Tourist(String newColor, int xPos, int yPos, int angle) {
         this.xPosition = xPos;
@@ -33,23 +33,23 @@ public class Tourist
     }
     
     /**
-     * Obtiene la posicion en x del turista.
-     * @return Entero con la posicion en x del turista
+     * Obtiene la posicion en x del turista en la plaza.
+     * @return Entero con la posicion en x del turista en la plaza.
      */
     public int getPosx(){
         return this.xPosition;
     }
     
     /**
-     * Obtiene la posicion en y del turista.
-     * @return Entero con la posicion en y del turista.
+     * Obtiene la posicion en y del turista en la plaza.
+     * @return Entero con la posicion en y del turista en la plaza.
      */
     public int getPosy(){
         return this.yPosition;
     }
     
     /**
-     * Obtiene el angulo de vision del turista (pov).
+     * Obtiene el angulo de vision del turista.
      * @return Entero con el angulo de vision del turista.
      */
     public int getPov(){
@@ -81,8 +81,8 @@ public class Tourist
     }
     
     /**
-     * Posiciona al turista en una coordenada x dada.
-     * @distance Cordenada x en el rango de la plaza.
+     * Desplaza al turista en la coordenada x dada.
+     * @param distance Cordenada x en el rango de la plaza.
      */
     public void moveHorizontal(int distance){
         turista.moveHorizontal(distance);
@@ -90,8 +90,8 @@ public class Tourist
     }
     
     /**
-     * Posiciona al turista en una coordenada y dada.
-     * @distance Cordenada y en el rango de la plaza.
+     * Desplaza al turista en la coordenada y dada.
+     * @param distance Cordenada y en el rango de la plaza.
      */
     public void moveVertical(int distance){
         turista.moveVertical(distance);
@@ -99,8 +99,8 @@ public class Tourist
     }
     
     /**
-     * Asigna un angulo de vision al turista
-     * @angle Angulo de vison del turista (pov) dado por un numero entre 0 y 360.
+     * Asigna un angulo de vision al turista.
+     * @param angle Angulo de vision del turista dado por un numero entre 0 y 360.
      */
     public void setPov(int angle){
         turista.setAngle(angle);

@@ -109,7 +109,6 @@ public class Rectangle{
         } else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             xPosition += delta;
             draw();

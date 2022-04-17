@@ -1,9 +1,9 @@
 
 /**
- * Un domo es un circulo que representa una cuplula del problema de la plaza para el MTB.
+ * Clase que representa una cupula de la plaza para el problema de la MTB.
  * 
  * @author Angie Mojica - Daniel Santanilla
- * @version 0.0.2
+ * @version 0.0.3
  */
 public class Dome {
     private int xPosition;
@@ -14,7 +14,7 @@ public class Dome {
     Circle dome = new Circle();
 
     /**
-     * Costructor del domo en una plaza.
+     * Costructor para objetos de la domo.
      * @param newColor Color del domo definido en la plaza.
      * @param xPos Posicion en x definida en la plaza.
      * @param yPos Posicion en y definida en la plaza.
@@ -39,7 +39,7 @@ public class Dome {
     }
     
     /**
-     * Obtiene la posicion en x del domo.
+     * Obtiene la posicion en x del domo en la plaza.
      * @return Numero de la posicion en x del domo.
      */
     public int getPosx(){
@@ -47,7 +47,7 @@ public class Dome {
     }
     
     /**
-     * Obtiene la posicion en y del domo.
+     * Obtiene la posicion en y del domo en la plaza.
      * @return Numero de la posicion en y del domo.
      */
     public int getPosy(){
@@ -55,7 +55,7 @@ public class Dome {
     }
     
     /**
-     * Obtiene el color del Domo
+     * Obtiene el color del Domo.
      * @return Cadena con el color del Domo
      */
     public String getColor() {
@@ -63,7 +63,7 @@ public class Dome {
     }
     
     /**
-     * Hace visible el domo en el canvas.
+     * Hace visible el domo.
      */
     public void makeVisible(){
         isVisible = true;
@@ -71,11 +71,10 @@ public class Dome {
     }
     
     /**
-     * Hace invisible el domo en el canvas.
+     * Hace invisible el domo.
      */
     public void makeInvisible(){
         dome.makeInvisible();
         isVisible = false;
     }
-    
 }

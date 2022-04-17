@@ -10,7 +10,6 @@ import java.awt.*;
 public class Triangle{
     
     public static int VERTICES=3;
-    
     private int height;
     private int width;
     private int xPosition;
@@ -33,7 +32,7 @@ public class Triangle{
     }
     
     /**
-     * Cambia el angulo al nuevo angulo
+     * Actualiza el valor del angulo.
      * @param newAngle Entero que representa el angulo en grados
      * es recomendable usar numeros entre 0 y 360
      */
@@ -140,7 +139,6 @@ public class Triangle{
         } else {
             delta = 1;
         }
-
         for(int i = 0; i < distance; i++){
             yPosition += delta;
             draw();
