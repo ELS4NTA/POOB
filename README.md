@@ -13,7 +13,9 @@ En este curso se aprende la capacidad de desarrollar aplicaciones software de ta
 	 - 70% - Proyecto Final
 		 - 50% evaluación de equipo (Sustentación) 
 		 - 50% evaluación individual (Examen final)
-
+### Grupo de trabajo
+Angie Natalia Mojica Diaz - 
+Daniel Antonio Santanilla Arias
 ### Profesor que dictó el curso
 Carlos Ignacio Gaitán Mora
 ### Contenido visto en el curso
