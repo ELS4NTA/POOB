@@ -51,7 +51,7 @@ public class Kalah {
         	i = tablero.getSiguiente(i);
             casa = tablero.getCasa(i);
             casa.setNumSemillas(casa.getNumSemillas()+1);
-            semillas--;
+            semillas -= 1;
         }
         int semillasCapturadas = tablero.captura(i, jugador);
         jugador.addSemillasEnAlmacen(semillasCapturadas);
@@ -132,4 +132,11 @@ public class Kalah {
 		return this.ganador;
 	}
 	
+	public Jugador getJugador(int idJugador) {
+		return (idJugador == 1 ? this.jugador1 : this.jugador2);
+	}
+	
+	public Tablero getTablero() {
+		return this.tablero;
+	}
 }

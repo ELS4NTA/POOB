@@ -8,6 +8,8 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
+import domain.Kalah;
+
 /**
  * Presentacion del juego
  * @Autor Angie Mojica - Daniel Santanilla
@@ -22,6 +24,7 @@ public class KalahGUI extends JFrame{
 	private JPanel tablero, cinta, casas, fondo, 
 	movimientos;
 	private JButton colores, reiniciar, almacen1, almacen2;
+	private Kalah kalah;
 	
 	/**
 	 * Construcctor
@@ -90,11 +93,13 @@ public class KalahGUI extends JFrame{
 			for (int j = 0; j <n_casas; j++) {
 				JButton casa = new JButton("0");
 				casa.setPreferredSize(new Dimension(10,10));
-				casa.setBackground(Color.cyan);//en espera
+				casa.setBackground(Color.white);//en espera
 				casas.add(casa);		
 			} 
 		}
 		
+		almacen1.setBackground(Color.white);
+		almacen2.setBackground(Color.white);
 		almacen1.setPreferredSize(new Dimension(50,50));
 		almacen2.setPreferredSize(new Dimension(50,50));
 		

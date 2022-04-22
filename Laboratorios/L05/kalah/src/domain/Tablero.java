@@ -47,7 +47,7 @@ public class Tablero {
 		if (i == tablero.length-1) {
 			siguiente = 0;
 		} else {
-			siguiente = i++;
+			siguiente = i + 1;
 		}
 		return siguiente;
 	}
@@ -84,14 +84,15 @@ public class Tablero {
 	public int captura(int i, Jugador jugador) {
 		int semillasGanadas = 0;
 		Casa casa = tablero[i];
-		if (casa.getNumSemillas() == 1 && misCasas(i, jugador)) {
-			Casa opuesto = tablero[i+numCasas];
-			if (!opuesto.esAlmacen()) {
+		if (!casa.esAlmacen()) {
+			if (casa.getNumSemillas() == 1 && misCasas(i, jugador)) {
+				Casa opuesto = tablero[i+numCasas+2];
 				semillasGanadas = opuesto.getNumSemillas()+casa.getNumSemillas();
 				opuesto.setNumSemillas(0);
 				casa.setNumSemillas(0);
 			}
 		}
+		
 		return semillasGanadas;
 	}
 	
