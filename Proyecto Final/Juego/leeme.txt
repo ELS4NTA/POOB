@@ -1,0 +1,6 @@
+Falto implementar el jugador vs maquina
+Falto implementar ficha ventajosa y algunos comodines del enunciado
+
+
+Para poder jugar se debe tener una version de java 11
+descargar el jar con la carpeta img y luego ejecutar el jar
